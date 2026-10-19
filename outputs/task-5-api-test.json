@@ -1,0 +1,256 @@
+{
+  "timestamp": "2026-10-19T08:49:52.656Z",
+  "endpointsTested": [
+    {
+      "endpoint": "POST /api/process-story",
+      "status": 200,
+      "response": {
+        "storyId": "story_1792399790885_eae5b3",
+        "providerUsed": "vietnamese-nlp-parser",
+        "totalSegments": 7,
+        "characters": [
+          {
+            "name": "Narrator",
+            "displayName": "Người dẫn truyện (Narrator)",
+            "type": "narration",
+            "segmentCount": 4,
+            "suggestedVoiceId": "vi-VN-NamMinhNeural"
+          },
+          {
+            "name": "Nhân vật",
+            "displayName": "Nhân vật",
+            "type": "dialogue",
+            "segmentCount": 1,
+            "suggestedVoiceId": "vi-VN-NamMinhNeural-Hero"
+          },
+          {
+            "name": "Minh",
+            "displayName": "Minh",
+            "type": "dialogue",
+            "segmentCount": 1,
+            "suggestedVoiceId": "vi-VN-NamMinhNeural-Hero"
+          },
+          {
+            "name": "Lan",
+            "displayName": "Lan",
+            "type": "dialogue",
+            "segmentCount": 1,
+            "suggestedVoiceId": "vi-VN-HoaiMyNeural-Young"
+          }
+        ],
+        "voiceMapping": {
+          "Narrator": "vi-VN-NamMinhNeural",
+          "Nhân vật": "vi-VN-NamMinhNeural-Hero",
+          "Minh": "vi-VN-NamMinhNeural-Hero",
+          "Lan": "vi-VN-HoaiMyNeural-Young"
+        },
+        "segments": [
+          {
+            "type": "narration",
+            "character": "Narrator",
+            "text": "Buổi sáng trên bến cảng sương còn đọng trên những mũi thuyền."
+          },
+          {
+            "type": "narration",
+            "character": "Narrator",
+            "text": "Ông lão nhìn ra biển khơi rồi chậm rãi nói"
+          },
+          {
+            "type": "dialogue",
+            "character": "Nhân vật",
+            "text": "Hôm nay gió thuận, đoàn tàu của chúng ta có thể ra khơi sớm."
+          },
+          {
+            "type": "narration",
+            "character": "Narrator",
+            "text": "Minh bước tới bên cạnh, ánh mắt đầy quyết tâm. Minh đáp"
+          },
+          {
+            "type": "dialogue",
+            "character": "Minh",
+            "text": "Cháu đã chuẩn bị xong toàn bộ lưới và lương thực rồi ông ạ."
+          },
+          {
+            "type": "narration",
+            "character": "Narrator",
+            "text": "Từ trên boong tàu, Lan vẫy tay gọi lớn"
+          },
+          {
+            "type": "dialogue",
+            "character": "Lan",
+            "text": "Hai ông cháu nhanh lên kẻo mặt trời lên cao bây giờ!"
+          }
+        ],
+        "availableVoices": [
+          {
+            "id": "vi-VN-NamMinhNeural",
+            "name": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+            "gender": "male",
+            "role": "narrator_or_character",
+            "provider": "edge-tts"
+          },
+          {
+            "id": "vi-VN-HoaiMyNeural",
+            "name": "Hoài My (Nữ - Truyền cảm, Nhẹ nhàng)",
+            "gender": "female",
+            "role": "narrator_or_character",
+            "provider": "edge-tts"
+          },
+          {
+            "id": "vi-VN-NamMinhNeural-Hero",
+            "edgeVoice": "vi-VN-NamMinhNeural",
+            "rate": "+8%",
+            "pitch": "+5Hz",
+            "name": "Minh Khôi (Nam trẻ - Năng động)",
+            "gender": "male",
+            "role": "character",
+            "provider": "edge-tts"
+          },
+          {
+            "id": "vi-VN-NamMinhNeural-Elder",
+            "edgeVoice": "vi-VN-NamMinhNeural",
+            "rate": "-10%",
+            "pitch": "-8Hz",
+            "name": "Ông Lão / Trầm Hùng (Nam trầm - Già dặn)",
+            "gender": "male",
+            "role": "character",
+            "provider": "edge-tts"
+          },
+          {
+            "id": "vi-VN-HoaiMyNeural-Young",
+            "edgeVoice": "vi-VN-HoaiMyNeural",
+            "rate": "+10%",
+            "pitch": "+8Hz",
+            "name": "Linh Đan (Nữ trẻ - Trong trẻo)",
+            "gender": "female",
+            "role": "character",
+            "provider": "edge-tts"
+          },
+          {
+            "id": "vi-VN-HoaiMyNeural-Calm",
+            "edgeVoice": "vi-VN-HoaiMyNeural",
+            "rate": "-8%",
+            "pitch": "-5Hz",
+            "name": "Bà Lão / Điềm Đạm (Nữ trầm - Sâu lắng)",
+            "gender": "female",
+            "role": "character",
+            "provider": "edge-tts"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "POST /api/assign-voices",
+      "status": 200,
+      "response": {
+        "storyId": "story_1792399790885_eae5b3",
+        "message": "Đã lưu cấu hình gán giọng đọc cho các nhân vật.",
+        "voiceMapping": {
+          "Narrator": "vi-VN-NamMinhNeural",
+          "Nhân vật": "vi-VN-NamMinhNeural-Hero",
+          "Minh": "vi-VN-NamMinhNeural-Hero",
+          "Lan": "vi-VN-HoaiMyNeural-Young",
+          "Ông lão": "vi-VN-NamMinhNeural-Elder"
+        }
+      }
+    },
+    {
+      "endpoint": "POST /api/generate-audio",
+      "status": 200,
+      "response": {
+        "storyId": "story_1792399790885_eae5b3",
+        "audioUrl": "/api/audio/story_1792399790885_eae5b3_full_story.mp3",
+        "downloadUrl": "/api/audio/story_1792399790885_eae5b3_full_story.mp3?download=1",
+        "fileName": "story_1792399790885_eae5b3_full_story.mp3",
+        "durationSeconds": 28.92,
+        "sizeBytes": 231597,
+        "totalSegmentsMerged": 7,
+        "voiceMapping": {
+          "Narrator": "vi-VN-NamMinhNeural",
+          "Nhân vật": "vi-VN-NamMinhNeural-Hero",
+          "Minh": "vi-VN-NamMinhNeural-Hero",
+          "Lan": "vi-VN-HoaiMyNeural-Young",
+          "Ông lão": "vi-VN-NamMinhNeural-Elder"
+        },
+        "segments": [
+          {
+            "index": 0,
+            "type": "narration",
+            "character": "Narrator",
+            "voiceId": "vi-VN-NamMinhNeural",
+            "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+            "text": "Buổi sáng trên bến cảng sương còn đọng trên những mũi thuyền.",
+            "sizeBytes": 33069,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 1,
+            "type": "narration",
+            "character": "Narrator",
+            "voiceId": "vi-VN-NamMinhNeural",
+            "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+            "text": "Ông lão nhìn ra biển khơi rồi chậm rãi nói",
+            "sizeBytes": 27309,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 2,
+            "type": "dialogue",
+            "character": "Nhân vật",
+            "voiceId": "vi-VN-NamMinhNeural-Hero",
+            "voiceName": "Minh Khôi (Nam trẻ - Năng động)",
+            "text": "Hôm nay gió thuận, đoàn tàu của chúng ta có thể ra khơi sớm.",
+            "sizeBytes": 35373,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 3,
+            "type": "narration",
+            "character": "Narrator",
+            "voiceId": "vi-VN-NamMinhNeural",
+            "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+            "text": "Minh bước tới bên cạnh, ánh mắt đầy quyết tâm. Minh đáp",
+            "sizeBytes": 32109,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 4,
+            "type": "dialogue",
+            "character": "Minh",
+            "voiceId": "vi-VN-NamMinhNeural-Hero",
+            "voiceName": "Minh Khôi (Nam trẻ - Năng động)",
+            "text": "Cháu đã chuẩn bị xong toàn bộ lưới và lương thực rồi ông ạ.",
+            "sizeBytes": 31725,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 5,
+            "type": "narration",
+            "character": "Narrator",
+            "voiceId": "vi-VN-NamMinhNeural",
+            "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+            "text": "Từ trên boong tàu, Lan vẫy tay gọi lớn",
+            "sizeBytes": 24621,
+            "provider": "google-tts-multivoice-dsp"
+          },
+          {
+            "index": 6,
+            "type": "dialogue",
+            "character": "Lan",
+            "voiceId": "vi-VN-HoaiMyNeural-Young",
+            "voiceName": "Linh Đan (Nữ trẻ - Trong trẻo)",
+            "text": "Hai ông cháu nhanh lên kẻo mặt trời lên cao bây giờ!",
+            "sizeBytes": 34797,
+            "provider": "google-tts-multivoice-dsp"
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "GET /api/audio/story_1792399790885_eae5b3_full_story.mp3",
+      "status": 200,
+      "contentType": "audio/mpeg",
+      "downloadedBytes": 231597
+    }
+  ]
+}
