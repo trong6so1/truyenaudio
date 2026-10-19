@@ -1,0 +1,10 @@
+node_modules/
+.env
+!.env.example
+.agents/mcp_config.json
+backend/storage/temp/*
+!backend/storage/temp/.gitkeep
+backend/storage/merged/*
+!backend/storage/merged/.gitkeep
+*.log
+.DS_Store

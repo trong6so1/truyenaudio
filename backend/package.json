@@ -1,0 +1,19 @@
+{
+  "name": "truyenaudio-backend",
+  "version": "1.0.0",
+  "description": "Backend service for Story-to-Audio AI Converter (Multi-voice TTS & LLM Dialogue Extraction)",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test:llm": "node src/services/testLlm.js",
+    "test:tts": "node src/services/testTts.js",
+    "test:audio": "node src/services/testAudio.js",
+    "test:api": "node src/services/testApi.js",
+    "test:e2e": "node src/services/testE2E.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
