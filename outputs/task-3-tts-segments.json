@@ -1,0 +1,151 @@
+{
+  "jobId": "task3_sample_job",
+  "tempDir": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job",
+  "totalSegments": 12,
+  "segments": [
+    {
+      "index": 0,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Đêm mùa đông trên đỉnh đèo Bảo Lộc sương mù giăng kín lối. Trong căn quán gỗ nhỏ bên đường, ngọn đèn dầu leo lét chiếu sáng gương mặt trầm tư của ông lão chủ quán.",
+      "fileName": "segment_000.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_000.mp3",
+      "sizeBytes": 92205,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 1,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Cánh cửa gỗ chợt kẹt mở, một chàng trai trẻ khoác áo choàng ướt đẫm bước vào. Minh khẽ nói",
+      "fileName": "segment_001.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_001.mp3",
+      "sizeBytes": 56109,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 2,
+      "type": "dialogue",
+      "character": "Minh",
+      "voiceId": "vi-VN-NamMinhNeural-Hero",
+      "voiceName": "Minh Khôi (Nam trẻ - Năng động)",
+      "text": "Cháu chào ông, ngoài trời lạnh quá, cho cháu xin một chén trà nóng được không ạ?",
+      "fileName": "segment_002.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_002.mp3",
+      "sizeBytes": 42477,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 3,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Ông lão ngẩng đầu nhìn chàng trai, đôi mắt ánh lên vẻ hiền từ. Ông lão mỉm cười đáp",
+      "fileName": "segment_003.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_003.mp3",
+      "sizeBytes": 53805,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 4,
+      "type": "dialogue",
+      "character": "Ông lão",
+      "voiceId": "vi-VN-NamMinhNeural-Elder",
+      "voiceName": "Ông Lão / Trầm Hùng (Nam trầm - Già dặn)",
+      "text": "Vào đi cháu, ngồi xuống bên bếp lửa cho ấm người đã.",
+      "fileName": "segment_004.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_004.mp3",
+      "sizeBytes": 34413,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 5,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Từ phía sau tấm rèm vải, một cô gái trẻ bưng khay trà bước ra. Lan nhẹ nhàng hỏi",
+      "fileName": "segment_005.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_005.mp3",
+      "sizeBytes": 52077,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 6,
+      "type": "dialogue",
+      "character": "Lan",
+      "voiceId": "vi-VN-HoaiMyNeural-Young",
+      "voiceName": "Linh Đan (Nữ trẻ - Trong trẻo)",
+      "text": "Anh đi đâu mà đêm hôm khuya khoắt lại một mình vượt đèo thế này?",
+      "fileName": "segment_006.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_006.mp3",
+      "sizeBytes": 37485,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 7,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Minh đón lấy chén trà nóng, hơi ấm lan tỏa qua từng đầu ngón tay.",
+      "fileName": "segment_007.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_007.mp3",
+      "sizeBytes": 40557,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 8,
+      "type": "dialogue",
+      "character": "Minh",
+      "voiceId": "vi-VN-NamMinhNeural-Hero",
+      "voiceName": "Minh Khôi (Nam trẻ - Năng động)",
+      "text": "Cảm ơn cô, tôi đang trên đường tìm lại cuốn nhật ký cũ của cha tôi để lại trên vùng núi này.",
+      "fileName": "segment_008.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_008.mp3",
+      "sizeBytes": 48813,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 9,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Minh trả lời.",
+      "fileName": "segment_009.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_009.mp3",
+      "sizeBytes": 10029,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 10,
+      "type": "narration",
+      "character": "Narrator",
+      "voiceId": "vi-VN-NamMinhNeural",
+      "voiceName": "Nam Minh (Nam - Trầm ấm, Dẫn truyện)",
+      "text": "Ông lão thoáng giật mình, bàn tay đang châm trà khẽ run lên. Ông lão thở dài nói",
+      "fileName": "segment_010.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_010.mp3",
+      "sizeBytes": 52269,
+      "provider": "google-tts-multivoice-dsp"
+    },
+    {
+      "index": 11,
+      "type": "dialogue",
+      "character": "Ông lão",
+      "voiceId": "vi-VN-NamMinhNeural-Elder",
+      "voiceName": "Ông Lão / Trầm Hùng (Nam trầm - Già dặn)",
+      "text": "Thì ra cháu chính là con trai của người lính năm xưa...",
+      "fileName": "segment_011.mp3",
+      "filePath": "/home/trong/test/truyenaudio/backend/storage/temp/task3_sample_job/segment_011.mp3",
+      "sizeBytes": 31725,
+      "provider": "google-tts-multivoice-dsp"
+    }
+  ]
+}
