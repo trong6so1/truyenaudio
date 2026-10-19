@@ -1,0 +1,61 @@
+{
+  "completedAt": "2026-10-19T08:56:03.567Z",
+  "totalTests": 5,
+  "passedTests": 5,
+  "testResults": [
+    {
+      "id": "TC-01",
+      "name": "Frontend Static Assets & Security Headers",
+      "status": "PASSED",
+      "details": {
+        "httpStatus": 200,
+        "nosniffHeader": "nosniff",
+        "cspHeader": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self' blob:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+      }
+    },
+    {
+      "id": "TC-02",
+      "name": "Validation & Error Handling - Input rỗng",
+      "status": "PASSED",
+      "details": {
+        "httpStatus": 400,
+        "error": "Vui lòng nhập nội dung truyện chữ hợp lệ."
+      }
+    },
+    {
+      "id": "TC-03",
+      "name": "Validation & Error Handling - StoryId không tồn tại",
+      "status": "PASSED",
+      "details": {
+        "httpStatus": 404,
+        "error": "Không tìm thấy phiên xử lý truyện (storyId không hợp lệ)."
+      }
+    },
+    {
+      "id": "TC-04",
+      "name": "Security - Chống Path Traversal khi tải file Audio",
+      "status": "PASSED",
+      "details": {
+        "httpStatus": 400
+      }
+    },
+    {
+      "id": "TC-05",
+      "name": "Full E2E Pipeline (Process -> Assign Voices -> TTS -> FFmpeg Merge -> Download MP3)",
+      "status": "PASSED",
+      "details": {
+        "storyId": "story_1792400161694_8d9e2c",
+        "extractedCharacters": [
+          "Narrator",
+          "Minh",
+          "Lan",
+          "Ông lão"
+        ],
+        "totalSegments": 7,
+        "durationSeconds": 39.6,
+        "sizeBytes": 317037,
+        "savedSampleFile": "/home/trong/test/truyenaudio/outputs/task-7-e2e-final-story.mp3"
+      }
+    }
+  ]
+}
