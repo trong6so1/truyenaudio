@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Truyện Audio AI Studio - Đa Giọng Đọc</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <div>
+        <span class="badge-pill">AI Story-to-Audio Studio</span>
+        <h1>Chuyển Đổi Truyện Chữ Sang Truyện Audio Đa Giọng Đọc</h1>
+        <p class="subtitle">Tự động bóc tách lời dẫn truyện &amp; lời thoại nhân vật, gán giọng đọc riêng biệt và ghép nối bằng FFmpeg.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <!-- KHU VỰC 1: NHẬP TRUYỆN CHỮ -->
+    <section class="card" aria-labelledby="section-input-title">
+      <div class="card-header">
+        <h2 id="section-input-title">1. Nhập Truyện Chữ</h2>
+        <div class="header-actions">
+          <button type="button" id="btn-load-sample" class="btn btn-secondary">Tải truyện mẫu</button>
+          <label for="file-upload" class="btn btn-outline">Tải file .txt</label>
+          <input type="file" id="file-upload" accept=".txt" class="sr-only" />
+        </div>
+      </div>
+
+      <p class="section-desc">Dán nội dung truyện chữ có lời dẫn và hội thoại nhân vật (trong dấu ngoặc kép <code>"..."</code> hoặc gạch đầu dòng <code>- ...</code>).</p>
+
+      <textarea
+        id="story-textarea"
+        rows="12"
+        placeholder="Nhập hoặc dán nội dung truyện chữ tại đây..."
+      ></textarea>
+
+      <div class="action-bar">
+        <span id="char-counter" class="meta-text">0 ký tự</span>
+        <button type="button" id="btn-process-story" class="btn btn-primary">
+          Phân tích Nhân vật &amp; Hội thoại
+        </button>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 2: DANH SÁCH NHÂN VẬT & GÁN GIỌNG ĐỌC -->
+    <section class="card" aria-labelledby="section-characters-title">
+      <div class="card-header">
+        <h2 id="section-characters-title">2. Phân Vai &amp; Gán Giọng Đọc</h2>
+        <span id="segment-summary-badge" class="status-badge">Chưa phân tích</span>
+      </div>
+
+      <p class="section-desc">Chọn giọng đọc riêng biệt cho Người dẫn truyện (Narrator) và từng nhân vật được trích xuất.</p>
+
+      <div id="characters-container" class="characters-list empty-box">
+        Hãy bấm "Phân tích Nhân vật &amp; Hội thoại" ở Bước 1 để hiển thị danh sách phân vai.
+      </div>
+
+      <div class="script-preview-wrapper">
+        <h3>Kịch bản phân đoạn đã bóc tách</h3>
+        <div id="segments-preview" class="segments-list empty-box">
+          Chưa có dữ liệu phân đoạn.
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button type="button" id="btn-assign-voices" class="btn btn-secondary" disabled>
+          Lưu cấu hình giọng đọc
+        </button>
+        <button type="button" id="btn-generate-audio" class="btn btn-accent" disabled>
+          Tạo &amp; Ghép Truyện Audio (MP3)
+        </button>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 3: TRÌNH PHÁT NHẠC & DOWNLOAD -->
+    <section class="card full-width" aria-labelledby="section-player-title">
+      <div class="card-header">
+        <h2 id="section-player-title">3. Trình Phát Truyện Audio &amp; Tải Xuống</h2>
+        <span id="audio-status-badge" class="status-badge">Sẵn sàng</span>
+      </div>
+
+      <div id="status-banner" class="status-banner hidden" role="status" aria-live="polite"></div>
+
+      <div id="player-box" class="player-container hidden">
+        <div class="player-main">
+          <audio id="story-audio-player" controls preload="metadata"></audio>
+          <a id="btn-download-audio" class="btn btn-primary" href="#" download>
+            Tải xuống File Audio (.mp3)
+          </a>
+        </div>
+        <div id="audio-meta-info" class="audio-meta-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
